@@ -1,0 +1,10 @@
+
+# for PHP7-CGI
+AddHandler php-cgi .php
+Action php-cgi /cgi-bin/php-cgi
+
+# for php and securewebexchange
+<IfDefine SSL>
+    AddHandler php-cgi .php
+    Action php-cgi https://www.securewebexchange.com/profitsharingplan.ca/cgi-bin/php-cgi
+</IfDefine>
